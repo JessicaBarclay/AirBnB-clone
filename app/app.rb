@@ -1,6 +1,6 @@
 require  'sinatra/base'
 
-class MakersBnb < Sinatra::Base
+class MakersBnB < Sinatra::Base
 
   get '/' do
     erb :index
