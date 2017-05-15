@@ -6,6 +6,21 @@ Makers week 6.
 
 ```
 As a User
+So that I can use MakersBnB
+I would like to sign up
+```
+```
+As a User
+So that I can continue to use MakersBnB
+I would like to log in
+```
+```
+As a User
+So that only I can access my account
+I would like to log out
+```
+```
+As a User
 So that I can advertise a property
 I would like to post a listing
 ```
