@@ -1,1 +1,3 @@
 # Makers-BnB
+
+Sinatra application
