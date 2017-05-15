@@ -2,4 +2,8 @@ require  'sinatra/base'
 
 class MakersBnb < Sinatra::Base
 
-end 
+  get '/' do
+    erb :index
+  end
+
+end
