@@ -19,6 +19,7 @@ group :test do
   gem 'database_cleaner'
   gem 'rspec'
   gem 'rspec-sinatra'
+  gem 'rubocop'
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false

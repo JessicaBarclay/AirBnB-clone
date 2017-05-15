@@ -1,0 +1,25 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/milesillsley/Projects/Makers-BnB/spec/features/homepage_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/milesillsley/Projects/Makers-BnB/spec/features/user_management_spec.rb": [
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/milesillsley/Projects/Makers-BnB/spec/models/user_spec.rb": [
+
+      ]
+    },
+    "timestamp": 1494865753
+  }
+}
