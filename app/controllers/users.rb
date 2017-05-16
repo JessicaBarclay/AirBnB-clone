@@ -4,6 +4,7 @@ class MakersBnB < Sinatra::Base
     user = User.create(email: params[:email],
                 username: params[:username],
                 password: params[:password])
+                session[:user_id] = user.id
     redirect '/properties'
   end
 
