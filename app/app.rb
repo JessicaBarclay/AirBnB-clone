@@ -12,6 +12,4 @@ class MakersBnB < Sinatra::Base
     erb :index
   end
 
-
-
 end
