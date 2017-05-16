@@ -1,6 +1,7 @@
 ENV['RACK_ENV'] = 'test'
 require './app/app'
 require 'capybara/rspec'
+require 'database_cleaner'
 require 'simplecov'
 require 'simplecov-console'
 require_relative 'helpers/web_helpers.rb'
@@ -13,6 +14,19 @@ SimpleCov.start
 Capybara.app = MakersBnB
 
 RSpec.configure do |config|
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :transaction
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.start
+  end
+
+  config.after(:each) do
+    DatabaseCleaner.clean
+  end
+
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
