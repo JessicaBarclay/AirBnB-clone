@@ -5,13 +5,17 @@ class MakersBnB < Sinatra::Base
                 username: params[:username],
                 password: params[:password],
                 password_confirmation: params[:password_confirmation])
-                session[:user_id] = user.id
-    redirect '/properties'
+    if user.save
+      session[:user_id] = user.id
+      redirect '/properties'
+    else
+      flash.now[:notice] = 'Passwords do not match'
+      erb :index
+    end
   end
 
-  get '/properties' do
-    @user = User.first
-    erb :properties
+  get '/users/new' do
+    erb :index
   end
 
 end

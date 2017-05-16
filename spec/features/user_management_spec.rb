@@ -15,5 +15,7 @@ feature 'User management' do
 
   scenario 'User cannot sign up with mis-matching passwords' do
     expect{ sign_up_with_invalid_password_confirmation }.not_to change(User, :count)
+    expect(current_path).to eq('/users/new')
+    expect(page).to have_content('Passwords do not match')
   end
 end
