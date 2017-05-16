@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 ruby '2.4.1'
 
@@ -9,9 +8,8 @@ gem 'dm-postgres-adapter'
 gem 'rack', '<2.0'
 gem 'rake'
 gem 'sinatra'
-gem 'sinatra-reloader', '~> 1.0'
 gem 'sinatra-flash'
-
+gem 'sinatra-reloader', '~> 1.0'
 
 group :test do
   gem 'capybara'
