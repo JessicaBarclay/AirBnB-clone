@@ -8,11 +8,11 @@ def sign_up
 end
 
 def list_a_space
-  click_button 'List a Space'
+  visit '/listings'
   fill_in :name, with: 'hideout'
   fill_in :description, with: 'good for making plans, if you can find it'
-  fill_in :price, with: '999999'
-  fill_in :date_from, with: '01/01/81'
-  fill_in :date_to, with: '02/01/81'
+  fill_in :price, with: 999999
+  fill_in :date_from, with: 01/01/81
+  fill_in :date_to, with: 02/01/81
   click_button 'List my Space'
 end
