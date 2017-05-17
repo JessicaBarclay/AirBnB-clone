@@ -19,6 +19,7 @@
         1,
         2,
         null,
+        null,
         null
       ],
       "/Users/milesillsley/Projects/Makers-BnB/spec/features/user_management_spec.rb": [
@@ -33,13 +34,17 @@
         1,
         1,
         1,
-        1,
         null,
         1,
         1,
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -50,6 +55,6 @@
 
       ]
     },
-    "timestamp": 1495021272
+    "timestamp": 1495022449
   }
 }

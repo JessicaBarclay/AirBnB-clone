@@ -7,4 +7,5 @@ feature 'listing management' do
   scenario 'User can post multiple listings' do
     expect { list_a_space; list_a_space }.to change(Listing, :count).by 2
   end
+
 end
