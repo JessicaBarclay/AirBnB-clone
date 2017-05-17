@@ -40,6 +40,7 @@ def log_in(email:, password:)
   fill_in :email, with: email
   fill_in :password, with: password
   click_button 'Log in'
+end
 
 def list_a_space
   visit '/listing'
@@ -48,5 +49,4 @@ def list_a_space
   fill_in :description, with: 'good for making plans, if you can find it'
   fill_in :price, with: 999999
   click_button 'List my Space'
-
 end
