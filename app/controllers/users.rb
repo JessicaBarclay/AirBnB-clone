@@ -18,4 +18,8 @@ class MakersBnB < Sinatra::Base
     erb :index
   end
 
+  get '/users/recover' do
+    "Please enter your email adress"
+  end
+
 end

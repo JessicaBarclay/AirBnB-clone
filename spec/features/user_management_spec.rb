@@ -57,3 +57,12 @@ feature 'User log in' do
     expect(page).not_to have_content('Thank you for visiting MakersBnB')
   end
 end
+
+feature 'Resetting Password' do
+  scenario 'Users can reset lost passwords' do
+    visit '/'
+    click_button 'Login'
+    click_link 'I forgot my password'
+    expect(page).to have_content("Please enter your email adress")
+  end
+end
