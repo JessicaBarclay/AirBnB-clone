@@ -24,11 +24,17 @@ feature 'Resetting Password' do
     expect(page).to have_content "Thank you"
   end
 
-  scenario "it doesn't allow you to use the token afte 1 hour" do
+  scenario "it doesn't allow you to use the token after 1 hour" do
     recover_password
     Timecop.travel(60 * 60 * 60) do
       visit("/users/reset_password?token=#{user.password_token}")
-      expect(page).to have_content "Your token is expired"
+      expect(page).to have_content "Your token is invalid"
     end
+  end
+
+  scenario "it allows you to reset password with valid token" do
+    recover_password
+    visit("/users/reset_password?token=#{user.password_token}")
+    expect(page).to have_content "Please enter your new password"
   end
 end
