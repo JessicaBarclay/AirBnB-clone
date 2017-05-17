@@ -20,8 +20,5 @@ class MakersBnB < Sinatra::Base
       erb :'sessions/new'
     end
   end
-
-  get '/listings' do
-    erb :listings
-  end
+  
 end
