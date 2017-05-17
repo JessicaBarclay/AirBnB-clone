@@ -18,4 +18,11 @@ feature 'User management' do
     expect(current_path).to eq('/users/new')
     expect(page).to have_content('Passwords do not match')
   end
+
+  scenario 'User can log out after sign up' do
+    sign_up
+    click_button 'Log out'
+    expect(page).to have_content('Thank you for visiting MakersBnB')
+    expect(page).not_to have_content('Welcome, pitythefool')
+  end
 end

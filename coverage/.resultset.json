@@ -30,12 +30,19 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/jessicabarclay/Projects/Makers-BnB/spec/models/user_spec.rb": [
 
       ]
     },
-    "timestamp": 1494949586
+    "timestamp": 1495013126
   }
 }
