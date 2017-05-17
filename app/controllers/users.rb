@@ -30,4 +30,8 @@ class MakersBnB < Sinatra::Base
     erb :'users/acknowledgement'
   end
 
+  get '/users/reset_password' do
+    "Your token is expired"
+  end
+
 end

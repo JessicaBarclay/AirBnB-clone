@@ -57,23 +57,3 @@ feature 'User log in' do
     expect(page).not_to have_content('Thank you for visiting MakersBnB')
   end
 end
-
-feature 'Resetting Password' do
-  scenario 'Users can reset lost passwords' do
-    visit '/'
-    click_button 'Login'
-    click_link 'I forgot my password'
-    expect(page).to have_content("Please enter your email address")
-  end
-
-  scenario "When I enter my email I'm told to check my inbox" do
-    recover_password
-    expect(page).to have_content "Thank you"
-  end
-
-  scenario 'assigned a reset token to the user when they recover' do
-    sign_up
-    click_button 'Log out'
-    expect{ recover_password }.to change{ User.first.password_token }
-  end
-end

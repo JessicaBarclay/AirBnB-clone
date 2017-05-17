@@ -10,6 +10,7 @@ gem 'rake'
 gem 'sinatra'
 gem 'sinatra-flash'
 gem 'sinatra-reloader', '~> 1.0'
+gem 'timecop'
 
 group :test do
   gem 'capybara'
