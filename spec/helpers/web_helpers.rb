@@ -33,3 +33,11 @@ def sign_up_with_invalid_password_confirmation
   fill_in :password_confirmation, with: 'doggo'
   click_button 'Sign Up'
 end
+
+def log_in(email:, password:)
+  visit '/'
+  click_button 'Login'
+  fill_in :email, with: email
+  fill_in :password, with: password
+  click_button 'Log in'
+end

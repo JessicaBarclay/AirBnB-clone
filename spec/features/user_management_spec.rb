@@ -26,3 +26,19 @@ feature 'User management' do
     expect(page).not_to have_content('Welcome, pitythefool')
   end
 end
+
+
+feature 'User log in' do
+
+  let!(:user) do
+    User.create(email: 'mrt@example.com',
+                username: 'MrT',
+                password: '12345',
+                password_confirmation: '12345')
+  end
+  scenario 'User can log in with correct credentials' do
+    log_in(email: user.email, password: user.password)
+    expect(page).to have_content('Welcome, MrT')
+    expect(page).not_to have_content('Thank you for visiting MakersBnB')
+  end
+end

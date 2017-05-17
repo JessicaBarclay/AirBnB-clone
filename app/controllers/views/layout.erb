@@ -9,6 +9,11 @@
       Welcome, <%= current_user.username %>
     <% end %>
     <br>
+    <%if !current_user %>
+    <form action="/sessions/new">
+      <input type="submit" value="Login">
+    </form>
+    <% end %>
     <form action="/sessions" method="post">
       <input type="hidden" name="_method" value="delete">
       <input type="submit" value="Log out">
