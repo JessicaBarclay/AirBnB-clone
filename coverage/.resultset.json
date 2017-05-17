@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jessicabarclay/Projects/Makers-BnB/spec/features/homepage_spec.rb": [
+      "/Users/David/Projects/Makers-BnB/spec/features/homepage_spec.rb": [
         1,
         1,
         1,
@@ -9,7 +9,7 @@
         null,
         null
       ],
-      "/Users/jessicabarclay/Projects/Makers-BnB/spec/features/user_management_spec.rb": [
+      "/Users/David/Projects/Makers-BnB/spec/features/user_management_spec.rb": [
         1,
         null,
         1,
@@ -39,10 +39,16 @@
         null,
         null
       ],
-      "/Users/jessicabarclay/Projects/Makers-BnB/spec/models/user_spec.rb": [
+      "/Users/David/Projects/Makers-BnB/spec/models/user_spec.rb": [
 
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1495013126
+||||||| merged common ancestors
+    "timestamp": 1494949586
+=======
+    "timestamp": 1494951800
+>>>>>>> 9b0e7b0f22375ff19679c487d521662f4fc0f73a
   }
 }
