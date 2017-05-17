@@ -8,4 +8,11 @@ feature 'listing management' do
     expect { list_a_space; list_a_space }.to change(Listing, :count).by 2
   end
 
+  scenario 'listing belongs to a user' do
+    sign_up
+    list_a_space
+    listing = Listing.first
+    expect(listing.user.username).to eq "MrT"
+  end
+
 end
