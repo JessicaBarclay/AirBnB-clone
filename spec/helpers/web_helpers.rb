@@ -1,4 +1,4 @@
-def sign_up
+def sign_up(*)
   visit '/'
   fill_in :email, with: 'MrT@a.team.com'
   fill_in :username, with: 'pitythefool'

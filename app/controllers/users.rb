@@ -9,7 +9,7 @@ class MakersBnB < Sinatra::Base
       session[:user_id] = user.id
       redirect '/listings'
     else
-      flash.now[:notice] = 'Passwords do not match'
+      flash.now[:errors] = user.errors.full_messages
       erb :index
     end
   end
