@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/milesillsley/Projects/Makers-BnB/spec/features/homepage_spec.rb": [
+      "/Users/jessicabarclay/Projects/Makers-BnB/spec/features/homepage_spec.rb": [
         1,
         1,
         1,
@@ -9,7 +9,7 @@
         null,
         null
       ],
-      "/Users/milesillsley/Projects/Makers-BnB/spec/features/listing_managment_spec.rb": [
+      "/Users/jessicabarclay/Projects/Makers-BnB/spec/features/listing_managment_spec.rb": [
         1,
         1,
         2,
@@ -22,7 +22,7 @@
         null,
         null
       ],
-      "/Users/milesillsley/Projects/Makers-BnB/spec/features/user_management_spec.rb": [
+      "/Users/jessicabarclay/Projects/Makers-BnB/spec/features/user_management_spec.rb": [
         1,
         null,
         1,
@@ -74,25 +74,6 @@
         1,
         null,
         null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/milesillsley/Projects/Makers-BnB/spec/features/viewing_listings_spec.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
         null,
         null,
         1,
@@ -102,10 +83,29 @@
         null,
         null
       ],
-      "/Users/milesillsley/Projects/Makers-BnB/spec/models/listing_spec.rb": [
+      "/Users/jessicabarclay/Projects/Makers-BnB/spec/features/viewing_listings_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/jessicabarclay/Projects/Makers-BnB/spec/models/listing_spec.rb": [
 
       ],
-      "/Users/milesillsley/Projects/Makers-BnB/spec/models/user_spec.rb": [
+      "/Users/jessicabarclay/Projects/Makers-BnB/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -126,6 +126,6 @@
         null
       ]
     },
-    "timestamp": 1495029548
+    "timestamp": 1495031291
   }
 }

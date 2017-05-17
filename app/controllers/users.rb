@@ -7,7 +7,7 @@ class MakersBnB < Sinatra::Base
                 password_confirmation: params[:password_confirmation])
     if user.save
       session[:user_id] = user.id
-      redirect '/listings'
+      redirect '/listing'
     else
       flash.now[:errors] = user.errors.full_messages
       erb :index
@@ -16,10 +16,6 @@ class MakersBnB < Sinatra::Base
 
   get '/users/new' do
     erb :index
-  end
-
-  get '/listings' do
-    erb :listings
   end
 
 end
