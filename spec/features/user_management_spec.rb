@@ -63,6 +63,13 @@ feature 'Resetting Password' do
     visit '/'
     click_button 'Login'
     click_link 'I forgot my password'
-    expect(page).to have_content("Please enter your email adress")
+    expect(page).to have_content("Please enter your email address")
+  end
+
+  scenario "When I enter my email I'm told to check my inbox" do
+    visit '/users/recover'
+    fill_in :email, with: "mrt@example.com"
+    click_button "Submit"
+    expect(page).to have_content "Thank you"
   end
 end
