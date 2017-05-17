@@ -1,0 +1,18 @@
+<h1> Listings: </h1>
+
+<form action='/listing/new'>
+  <input type='submit' value='List a Space'>
+</form>
+
+
+<ul id="listings">
+  <% @listings.each do |listing| %>
+  <li>
+    Listing Name: <%= listing.name %>
+    Description: <%= listing.description %>
+    Price: <%= listing.price %>
+    Available From: <%= listing.from %>
+    Available Until: <%= listing.to %>
+  </li>
+  <% end %>
+</ul>

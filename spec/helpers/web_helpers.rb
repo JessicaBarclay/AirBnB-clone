@@ -8,7 +8,7 @@ def sign_up
 end
 
 def list_a_space
-  visit '/listings'
+  visit '/listing'
   click_button 'List a Space'
   fill_in :name, with: 'hideout'
   fill_in :description, with: 'good for making plans, if you can find it'

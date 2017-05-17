@@ -1,6 +1,6 @@
 require_relative '../data_mapper_setup'
 
-class Listings
+class Listing
 
   include DataMapper::Resource
 

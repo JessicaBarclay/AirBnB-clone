@@ -1,20 +1,21 @@
 class MakersBnB < Sinatra::Base
 
-  get '/listings' do
-    erb :listings
+  get '/listing' do
+    @listings = Listing.all
+    erb :listing
   end
 
-  get '/listings/new' do
-    erb :new_listings
+  get '/listing/new' do
+    erb :new_listing
   end
 
-  post '/listings/new' do
-    Listings.create(name: params[:name],
+  post '/listing/new' do
+    Listing.create(name: params[:name],
                     description: params[:description],
                     price: params[:price],
                     from: params[:from],
                     to: params[:to])
-    redirect '/listings'
+    redirect '/listing'
   end
 
 end
