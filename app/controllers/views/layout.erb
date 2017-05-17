@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MakersBnB</title>
+  </head>
+  <body>
+    <%if current_user %>
+      Welcome, <%= current_user.username %>
+    <% end %>
+    <br>
+    <%if !current_user %>
+    <form action="/sessions/new">
+      <input type="submit" value="Login">
+    </form>
+    <% end %>
+    <form action="/sessions" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" value="Log out">
+    </form>
+      <% if flash[:errors] && !flash[:errors].empty? %>
+        Please refer to the following errors below:
+        <ul id='errors'>
+        <% flash[:errors].each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    </ul>
+    <% end %>
+    <% if flash[:notice] %>
+    <div id='notice'>
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+    <% if flash[:notice] %>
+    <div id="notice"><%= flash[:notice]%></div>
+    <% end %>
+    <%=yield%>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 require 'data_mapper'
 require 'dm-postgres-adapter'
 require_relative 'models/user'
+require_relative 'models/listing'
 
 env = ENV['RACK_ENV']
 
