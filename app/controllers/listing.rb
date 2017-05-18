@@ -15,7 +15,13 @@ class MakersBnB < Sinatra::Base
                     price: params[:price])
 
     listing.user = current_user
-    listing.save
-    redirect '/listing'
+
+    if !listing.user
+      flash[:errors] = ['You must be logged in to post listing']
+      redirect '/'
+    else
+      listing.save
+      redirect '/listing'
+    end
   end
 end

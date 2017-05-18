@@ -1,4 +1,10 @@
 feature 'listing management' do
+  scenario 'User is redirected to sign up, if listing a space while logged out' do
+    expect{ list_a_space }.not_to change(Listing, :count)
+    expect(page).to have_content('You must be logged in to post listing')
+    expect(current_path).to eq '/'
+  end
+
   scenario 'User can post a listing' do
     sign_up
     expect { list_a_space }.to change(Listing, :count).by 1
