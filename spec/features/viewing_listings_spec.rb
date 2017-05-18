@@ -1,5 +1,6 @@
 feature 'viewing listings page' do
   scenario 'listing appears on page' do
+    sign_up
     list_a_space
     expect(page.status_code).to eq 200
 
@@ -10,6 +11,7 @@ feature 'viewing listings page' do
     end
   end
   scenario 'can click on a listing to view it' do
+    sign_up
     list_a_space
     click_link 'View Listing'
     expect(current_path).to eq '/listing/hideout'
