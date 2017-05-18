@@ -9,8 +9,8 @@ class Listing
   property :name, String
   property :description, String
   property :price, Numeric
-  property :available_from, Date
-  property :available_to, Date
+  property :availablefrom, Date
+  property :availableto, Date
 
   belongs_to :user
 

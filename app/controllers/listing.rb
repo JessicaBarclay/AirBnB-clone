@@ -12,7 +12,9 @@ class MakersBnB < Sinatra::Base
   post '/listing/new' do
     listing = Listing.new(name: params[:name],
                     description: params[:description],
-                    price: params[:price])
+                    price: params[:price],
+                    availablefrom: params[:availablefrom],
+                    availableto: params[:availableto])
 
     listing.user = current_user
 
