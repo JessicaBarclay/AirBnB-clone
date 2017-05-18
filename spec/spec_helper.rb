@@ -5,6 +5,7 @@ require 'database_cleaner'
 require 'simplecov'
 require 'simplecov-console'
 require_relative 'helpers/web_helpers.rb'
+require 'timecop'
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 SimpleCov::Formatter::Console,
