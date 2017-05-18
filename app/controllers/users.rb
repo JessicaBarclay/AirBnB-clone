@@ -33,6 +33,7 @@ class MakersBnB < Sinatra::Base
   get '/users/reset_password' do
     @user = User.find_by_valid_token(params[:token])
     if(@user)
+      session[:token] = params[:token]
       erb :'users/reset_password'
     else
       "Your token is invalid"
@@ -40,6 +41,8 @@ class MakersBnB < Sinatra::Base
   end
 
   patch '/users' do
+    user = User.find_by_valid_token(session[:token])
+    user.update(password: params[:password], password_confirmation: params[:password_confirmation])
     redirect '/sessions/new'
   end
 

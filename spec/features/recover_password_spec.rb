@@ -46,4 +46,14 @@ feature 'Resetting Password' do
     click_button "Submit"
     expect(page).to have_content "Log into MakersBnB!"
   end
+
+  scenario 'it lets you sign in after password reset' do
+    recover_password
+    visit("/users/reset_password?token=#{user.password_token}")
+    fill_in :password, with: "newpassword"
+    fill_in :password_confirmation, with: "newpassword"
+    click_button 'Submit'
+    log_in(email: "MrT@a.team.com", password: "newpassword")
+    expect(page).to have_content "Welcome, pitythefool"
+  end
 end
