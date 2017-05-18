@@ -48,5 +48,7 @@ def list_a_space
   fill_in :name, with: 'hideout'
   fill_in :description, with: 'good for making plans, if you can find it'
   fill_in :price, with: 999999
+  # fill_in :available_from, with: '01012018'
+  # fill_in :available_to, with: '01022018'
   click_button 'List my Space'
 end

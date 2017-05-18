@@ -19,6 +19,7 @@ feature 'viewing listings page' do
     expect(page).to have_content 'hideout'
     expect(page).to have_content 'Description: good for making plans, if you can find it'
     expect(page).to have_content 'Price: 999999'
+    expect(page).to have_content 'Available from'
+    expect(page).to have_content 'Available to'
   end
-
 end
