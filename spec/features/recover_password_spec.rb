@@ -63,13 +63,13 @@ feature 'Resetting Password' do
      fill_in :password, with: "newpassword"
      fill_in :password_confirmation, with: "wrongpassword"
      click_button "Submit"
-     expect(page).to have_content("Your token is invalid")
+     expect(page).to have_content("Password does not match the confirmation")
    end
 
-  #  scenario 'it resets token upon succesful password update' do
-  #    recover_password
-  #    set_password(password: 'newpassword', password_confirmation: 'newpassword')
-  #    visit("/users/reset_password?token=#{user.password_token}")
-  #    expect(page).to have_content "Your token is invalid"
-  #  end
+   scenario 'it resets token upon succesful password update' do
+     recover_password
+     set_password(password: 'newpassword', password_confirmation: 'newpassword')
+     visit("/users/reset_password?token=#{user.password_token}")
+     expect(page).to have_content "Your token is invalid"
+   end
 end
