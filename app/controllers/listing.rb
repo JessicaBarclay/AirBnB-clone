@@ -24,4 +24,9 @@ class MakersBnB < Sinatra::Base
       redirect '/listing'
     end
   end
+
+  get '/listing/:name' do
+    @listing = Listing.first(:name => params[:name])
+    erb :view_listing
+  end
 end
