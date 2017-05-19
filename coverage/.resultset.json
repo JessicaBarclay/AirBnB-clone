@@ -12,12 +12,21 @@
       "/Users/David/Projects/Makers-BnB/spec/features/listing_managment_spec.rb": [
         1,
         1,
+        1,
         2,
         1,
         null,
         null,
         1,
+        1,
         2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
@@ -165,13 +174,15 @@
         1,
         1,
         1,
-        null,
-        1,
-        1,
-        1,
         1,
         null,
+        1,
+        1,
+        1,
+        1,
         null,
+        null,
+        1,
         1,
         1,
         1,
@@ -248,6 +259,9 @@
         null
       ]
     },
-    "timestamp": 1495188535
+
+    "timestamp": 1495106326
+
+    
   }
 }

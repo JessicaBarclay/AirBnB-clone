@@ -10,10 +10,25 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/listing/new' do
-    Listing.create(name: params[:name],
+    listing = Listing.new(name: params[:name],
                     description: params[:description],
-                    price: params[:price])
-    redirect '/listing'
+                    price: params[:price],
+                    availablefrom: params[:availablefrom],
+                    availableto: params[:availableto])
+
+    listing.user = current_user
+
+    if !listing.user
+      flash[:errors] = ['You must be logged in to post listing']
+      redirect '/'
+    else
+      listing.save
+      redirect '/listing'
+    end
   end
 
+  get '/listing/:name' do
+    @listing = Listing.first(:name => params[:name])
+    erb :view_listing
+  end
 end
