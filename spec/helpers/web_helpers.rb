@@ -67,3 +67,12 @@ def set_password(password:, password_confirmation:)
   fill_in :password_confirmation, with: password_confirmation
   click_button 'Submit'
 end
+
+def make_a_request
+  sign_up
+  list_a_space
+  click_link 'View Listing'
+  fill_in :requestfrom, with: "2018-01-01"
+  fill_in :requestuntil, with: "2018-01-02"
+  click_button 'Request to Book'
+end

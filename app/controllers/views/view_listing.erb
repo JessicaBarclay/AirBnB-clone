@@ -5,3 +5,9 @@
   Available from: <%= @listing.availablefrom %>
   Available to: <%= @listing.availableto %>
 </section>
+
+<form action='/request/new' method='post'>
+  Request from: <input type='date' name='requestfrom'>
+  Rquest Until: <input type='date' name='requestuntil'>
+  <input type='submit' value='Request to Book'>
+</form>
