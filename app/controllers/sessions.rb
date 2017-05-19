@@ -21,4 +21,10 @@ class MakersBnB < Sinatra::Base
     end
   end
 
+  get '/sessions/listing/:name' do
+    listing = Listing.first(:name => params[:name])
+    session[:listing_id] = listing.id
+    redirect to("/listing/#{params[:name]}")
+  end
+
 end

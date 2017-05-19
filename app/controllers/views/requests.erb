@@ -1,0 +1,12 @@
+<h1>Requests</h1>
+
+
+<ul id="requests">
+  <% @requests.each do |request| %>
+  <li>
+    <%= request.user.username %> has requested to stay at the <%= request.listing.name %>
+    requesting dates from <%= request.requestfrom%> to <%= request.requestuntil%>
+    <%= request.listing.user.username %> has yet to confirm
+  </li>
+    <% end %>
+</ul>
