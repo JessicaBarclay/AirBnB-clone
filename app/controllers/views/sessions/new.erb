@@ -1,15 +1,17 @@
-<h1>Log into MakersBnB!</h1>
+<h1 style="margin-left:50px;margin-top:30px">Log into MakersBnB!</h1>
 
-<form action='/sessions' method='post'>
+<form style="margin-left:50px;margin-top:30px" action='/sessions' method='post'>
   <label for="email">
-    Email: <input type='text' name='email'>
+    Email: <input type='text' name='email' class="form-control" >
   </label>
   <br>
   <label for="password">
-    Password: <input type='password' name='password'>
+    Password: <input type='password' name='password' class="form-control" >
   </label>
-  <br>
-  <input type='submit' value='Log in'>
-</form>
-
-<a href="/users/recover">I forgot my password</a>
+    <br>
+    <input class="btn btn-primary" type='submit' value='Log in'>
+    <a href="/users/recover">I forgot my password</a>
+  </form>
+  <form style="margin-left:50px;margin-top:30px" action="/" >
+    <input class="btn btn-primary" type="submit" value="Sign up">
+  </form>
