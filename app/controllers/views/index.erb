@@ -1,21 +1,26 @@
-<h1>Welcome to MakersBnB</h1>
+<h1 align="center" >Welcome to MakersBnB</h1>
 
-<form action='/users/new' method='post'>
+<br>
+
+<div class="col-md-4"></div>
+<form class="col-md-4" align="center" action='/users/new' method='post'>
   <label for="email">
-    Email: <input  type='email' name='email' required>
+    Email: <input  type='email' name='email' class="form-control" required >
   </label>
   <br>
   <label for="username">
-    Username: <input type='text' name='username'>
+    Username: <input type='text' name='username' class="form-control">
   </label>
   <br>
   <label for="password">
-    Password: <input type='password' name='password'>
+    Password: <input type='password' name='password' class="form-control">
   </label>
   <br>
   <label for="password_confirmation">
-    Password confirmation: <input type='password' name='password_confirmation'>
+    Password confirmation: <input type='password' name='password_confirmation' class="form-control">
   </label>
   <br>
-  <input type='submit' value='Sign Up'>
+  <input class="btn btn-primary" type='submit' value='Sign Up'>
 </form>
+
+<div class="col-md-4"></div>

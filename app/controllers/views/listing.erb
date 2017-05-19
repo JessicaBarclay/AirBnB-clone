@@ -1,11 +1,11 @@
-<h1> Listings: </h1>
-
-<form action='/listing/new'>
-  <input type='submit' value='List a Space'>
+<h2 align="center"> Listings: </h2>
+<br>
+<form align="center" action='/listing/new'>
+  <input class="btn btn-primary" type='submit' value='List a Space'>
 </form>
-
-
-<ul id="listings">
+<br>
+<div class="col-md-4"></div>
+<ul class="col-md-4" id="listings">
   <% @listings.each do |listing| %>
   <li>
     Listing Name: <%= listing.name %>
@@ -15,3 +15,4 @@
   </li>
   <% end %>
 </ul>
+<div class="col-md-4"></div>
