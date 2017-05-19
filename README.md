@@ -2,7 +2,9 @@
 
 Sinatra application
 
-Makers week 6.
+Makers week 6
+
+Heroku: https://ateam-bnb2.herokuapp.com/
 
 ```
 As a User
