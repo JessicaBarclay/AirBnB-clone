@@ -15,4 +15,9 @@ class MakersBnB < Sinatra::Base
       redirect '/requests'
     end
   end
+
+  get '/requests' do
+    @requests = Request.all
+    erb :requests
+  end
 end
