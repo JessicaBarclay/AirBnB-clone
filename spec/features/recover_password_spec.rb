@@ -3,8 +3,14 @@ feature 'Resetting Password' do
   before do
     sign_up
     Capybara.reset!
+    allow(SendRecoverLink).to receive(:call)
   end
   let(:user) { User.first }
+
+  scenario 'it calls the SendRecoverLink service to send the link' do
+    expect(SendRecoverLink).to receive(:call).with(user)
+    recover_password
+  end
 
   scenario 'assigned a reset token to the user when they recover' do
     sign_up

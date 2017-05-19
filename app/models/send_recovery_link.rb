@@ -11,12 +11,14 @@ class SendRecoverLink
  end
 
  def call(user)
-   mailer.send_message(ENV["mailgun_domain_name"], {from: "bookmarkmanager@mail.com",
+   mailer.send_message(ENV['mailgun_domain_name'], { from: 'jibbajabba@mail.com',
        to: user.email,
-       subject: "reset your password",
-       text: "click here to reset your password https://ateam-bnb.herokuapp.com/reset_password?token=#{user.password_token}" })
+       subject: 'reset your password',
+       text: "click here to reset your password https://ateam-bnb2.herokuapp.com/reset_password?token=#{user.password_token}" })
  end
 
  private
+
  attr_reader :mailer
+
 end
