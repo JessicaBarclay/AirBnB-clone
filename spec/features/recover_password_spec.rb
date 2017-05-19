@@ -14,7 +14,6 @@ feature 'Resetting Password' do
 
   scenario 'assigned a reset token to the user when they recover' do
     sign_up
-    click_button 'Log out'
     expect{ recover_password }.to change{ User.first.password_token }
   end
 
