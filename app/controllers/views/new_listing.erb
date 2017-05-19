@@ -1,10 +1,15 @@
 <h1> New Listing </h1>
 
 <form action='/listing/new' method='post'>
-  Name: <input type='text' name='name'>
-  Description: <input type='text' name='description'>
-  Price (per night): <input type='number' name='price'>
-  Available from: <input type='date' name='availablefrom'>
-  Available to: <input type='date' name='availableto'>
-  <input type='submit' value='List my Space'>
+  Name: <input type='text' name='name' class="form-control">
+  <br>
+  Description: <textarea class="form-control" rows="5" id="comment" type='text' name='description'></textarea>
+  <br>
+  Price (per night): <input type='number' name='price' class="form-control">
+  <br>
+  Available from: <input type='date' name='availablefrom' class="form-control">
+  <br>
+  Available to: <input type='date' name='availableto' class="form-control">
+  <br>
+  <input class="btn btn-primary" type='submit' value='List my Space'>
 </form>
