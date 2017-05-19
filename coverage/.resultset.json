@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/David/Projects/Makers-BnB/spec/features/homepage_spec.rb": [
+      "/Users/bnoonan/new_projects/Makers-BnB/spec/features/homepage_spec.rb": [
         1,
         1,
         1,
@@ -9,8 +9,14 @@
         null,
         null
       ],
-      "/Users/David/Projects/Makers-BnB/spec/features/listing_managment_spec.rb": [
+      "/Users/bnoonan/new_projects/Makers-BnB/spec/features/listing_managment_spec.rb": [
         1,
+        1,
+        2,
+        1,
+        1,
+        null,
+        null,
         1,
         1,
         2,
@@ -31,7 +37,7 @@
         null,
         null
       ],
-      "/Users/David/Projects/Makers-BnB/spec/features/recover_password_spec.rb": [
+      "/Users/bnoonan/new_projects/Makers-BnB/spec/features/recover_password_spec.rb": [
         1,
         null,
         1,
@@ -108,7 +114,7 @@
         null,
         null
       ],
-      "/Users/David/Projects/Makers-BnB/spec/features/user_management_spec.rb": [
+      "/Users/bnoonan/new_projects/Makers-BnB/spec/features/user_management_spec.rb": [
         1,
         null,
         1,
@@ -169,7 +175,7 @@
         null,
         null
       ],
-      "/Users/David/Projects/Makers-BnB/spec/features/viewing_listings_spec.rb": [
+      "/Users/bnoonan/new_projects/Makers-BnB/spec/features/viewing_listings_spec.rb": [
         1,
         1,
         1,
@@ -182,6 +188,12 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         1,
         1,
@@ -190,10 +202,22 @@
         null,
         null
       ],
-      "/Users/David/Projects/Makers-BnB/spec/models/listing_spec.rb": [
-
+      "/Users/bnoonan/new_projects/Makers-BnB/spec/models/listing_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
       ],
-      "/Users/David/Projects/Makers-BnB/spec/models/user_spec.rb": [
+      "/Users/bnoonan/new_projects/Makers-BnB/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -239,7 +263,7 @@
         null,
         null
       ],
-      "/Users/David/Projects/Makers-BnB/spec/send_recovery_link_spec.rb": [
+      "/Users/bnoonan/new_projects/Makers-BnB/spec/send_recovery_link_spec.rb": [
         null,
         null,
         null,
@@ -259,9 +283,6 @@
         null
       ]
     },
-
-    "timestamp": 1495106326
-
-    
+    "timestamp": 1495189225
   }
 }
