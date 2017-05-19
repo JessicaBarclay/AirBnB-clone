@@ -76,3 +76,14 @@ def make_a_request
   fill_in :requestuntil, with: "2018-01-02"
   click_button 'Request to Book'
 end
+
+def make_a_request_while_logged_out
+  sign_up
+  list_a_space
+  click_button 'Log out'
+  visit '/listing'
+  click_link 'View Listing'
+  fill_in :requestfrom, with: "2018-01-01"
+  fill_in :requestuntil, with: "2018-01-02"
+  click_button 'Request to Book'
+end

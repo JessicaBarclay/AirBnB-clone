@@ -9,4 +9,6 @@ class Request
   property :requestfrom, Date
   property :requestuntil, Date
 
+  belongs_to :user
+
 end
