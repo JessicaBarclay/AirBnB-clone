@@ -28,7 +28,7 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/listing/:name' do
-    @listing = Listing.first(:name => params[:name])
+    @listing = current_listing
     erb :view_listing
   end
 end

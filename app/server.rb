@@ -8,5 +8,8 @@ class MakersBnB < Sinatra::Base
     def current_user
       @current_user ||= User.get(session[:user_id])
     end
+    def current_listing
+      @current_listing ||= Listing.get(session[:listing_id])
+    end
   end
 end

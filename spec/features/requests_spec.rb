@@ -14,4 +14,11 @@ feature 'Requests' do
     request = Request.first
     expect(request.user.username).to eq "pitythefool"
   end
+
+  scenario 'Requests belong to a listing' do
+    make_a_request
+    request = Request.first
+    expect(request.listing.name).to eq "hideout"
+    expect(request.listing.user.username).to eq "pitythefool"
+  end
 end
