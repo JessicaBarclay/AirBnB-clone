@@ -52,3 +52,18 @@ def list_a_space
   fill_in :availableto, with: "2018-01-02"
   click_button 'List my Space'
 end
+
+def recover_password
+  visit '/'
+  click_button 'Login'
+  click_link 'I forgot my password'
+  fill_in :email, with: "MrT@a.team.com"
+  click_button "Submit"
+end
+
+def set_password(password:, password_confirmation:)
+  visit("/users/reset_password?token=#{user.password_token}")
+  fill_in :password, with: password
+  fill_in :password_confirmation, with: password_confirmation
+  click_button 'Submit'
+end
