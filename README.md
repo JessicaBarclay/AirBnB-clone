@@ -1,10 +1,12 @@
 # Makers-BnB
 
-Sinatra application
+Ruby // Sinatra application
 
-Makers week 6
 
-Heroku: https://ateam-bnb2.herokuapp.com/
+### An AirBnB clone built in a test-driven environment using Ruby.
+
+
+Visit the site [here](https://airbnb-clone-jbarclay.herokuapp.com/)
 
 ```
 As a User
@@ -44,25 +46,6 @@ I would like to offer a range of dates when the property is available
 ```
 As a Customer
 So that I can rent a property
-I would like to request to hire a property for one night
+I would like to request to hire a property
 ```
-```
-As a User
-So that bookings don't clash
-I would like to approve a booking request before accepting
-```
-```
-As a Customer
-So that I can see a property is available to rent
-I only want to view available properties
-```
-```
-As a Customer
-So that I can rent a property
-I would like to see properties that haven't been booked
-```
-```
-As a User
-So that I can screen customers
-I would like to keep the property available until I confirm a booking
 ```
